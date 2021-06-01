@@ -1,0 +1,13 @@
+game:
+    second_human: False # Instead of the RL play with a second human
+    # position of the goal on the board
+    goal: "left_down" # "left_down" "left_up" "right_down"
+    discrete: True # Discrete or continuous human input
+
+Experiment:
+  loop: max_episodes # Test loop
+
+  max_episodes_mode:
+    max_episodes: 70  # Total test trials during each test session
+    max_duration: 40  # Max steps per trial (change it to time instead of timesteps)
+    action_duration: 0.2 # Time duration between consecutive RL agent actions
